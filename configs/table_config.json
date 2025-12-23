@@ -1,0 +1,10 @@
+{
+  "source_path": "abfss://source@storage/account/hr/employee.csv",
+  "target_path": "abfss://bronze@storage/account/hr/dim_employee",
+  "column_mapping": {
+    "EmployeeID": "employee_id",
+    "FirstName": "first_name",
+    "LastName": "last_name"
+  },
+  "excluded_columns": ["debug_flag", "internal_notes"]
+}
